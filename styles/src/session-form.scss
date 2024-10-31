@@ -1,0 +1,118 @@
+.pbq-session-form-inner {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 15vh auto;
+
+  font-family: 'Open Sans',sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  position: relative;
+  z-index: 11;
+  overflow: hidden;
+
+  &.pbq-session-form-loading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255, .5);
+  }
+
+  .mdc-linear-progress {
+    z-index: 2;
+  }
+
+  .pbq-session-form-content {
+    padding: 50px 40px 25px;
+
+
+    h1 {
+      font-size: 24px;
+      color: #191b1e;
+      text-align: center;
+      margin: 0 0 5px;
+      font-weight: 600;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-size: 16px;
+      color: #565a60;
+      margin: 0 0 30px;
+      font-weight: 400;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .pbq-session-input {
+      font-family: 'Open Sans', sans-serif;
+      border: none;
+      width: 100%;
+      height: 45px;
+      padding: 5px 15px;
+      margin-bottom: 15px;
+      background: #ecf0f3;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .pbq-session-error-message {
+      color: #ee560d;
+      padding: 0 4px 15px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .pbq-session-submit {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-color: transparent !important;
+      background-color: #36f;
+      text-transform: uppercase;
+      min-width: 120px;
+      width: 100%;
+      min-height: 45px;
+      padding: 0;
+      border-radius: 5px;
+      cursor: pointer !important;
+      transition: background .2s;
+      font-size: 14px;
+      color: #fff !important;
+      opacity: .86;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .pbq-session-form-footer {
+      font-size: 14px;
+      color: #8d929a;
+      margin-top: 15px;
+      font-weight: 400;
+
+      a,
+      a:link,
+      a:hover,
+      a:active,
+      a:focus {
+        color: #36f;
+        text-decoration: none;
+        font-weight: 600;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+
+}

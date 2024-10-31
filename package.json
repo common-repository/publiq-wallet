@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "cross-env": "^5.1.6",
+    "blockchain-models-ts": "git+https://github.com/publiqnet/blockchain-models-ts.git",
+    "cryptography-ts": "git+https://github.com/publiqnet/cryptography-ts.git",
+    "laravel-mix": "^2.1.11",
+    "material-components-web": "^1.1.0",
+    "material-design-icons": "^3.0.1",
+    "postcss-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "fingerprintjs2": "^2.1.0"
+  }
+}

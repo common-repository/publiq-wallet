@@ -1,0 +1,31 @@
+$mdc-theme-primary: #0b39c3;
+
+@import "~@material/button/mdc-button";
+@import "~@material/dialog/mdc-dialog";
+@import "~@material/textfield/mdc-text-field";
+@import "~@material/snackbar/mdc-snackbar";
+@import "~@material/linear-progress/mdc-linear-progress";
+@import "session-form";
+@import "wallet";
+
+
+
+.mdc-dialog__surface {
+  overflow: hidden;
+}
+
+.mdc-dialog__title::before {
+  margin: 0 !important;
+}
+
+.toplevel_page_publiq-wallet {
+  .wp-menu-image {
+    img {
+      width: 23px;
+    }
+  }
+}
+
+
+
+
